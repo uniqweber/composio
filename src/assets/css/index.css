@@ -1,1 +1,64 @@
-@import "tailwindcss"
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+    --color-light: #f6f4f0;
+    --font-tinos: "Tinos", serif;
+    --font-ibm: "IBM Plex Serif", serif;
+    --font-roobert: "Roobert", sans-serif;
+    --font-roobert-mono: "Roobert Mono", monospace;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+    .flex-between {
+        @apply flex items-center justify-between;
+    }
+    .padding-x {
+        @apply px-6 md:px-13;
+    }
+}
+
+body {
+    background-color: var(--color-light);
+}
+
+button {
+    cursor: pointer;
+}
+
+/* custom font family */
+@font-face {
+    font-family: "Roobert";
+    src: url("/fonts/RoobertTRIAL-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roobert";
+    src: url("/fonts/RoobertTRIAL-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roobert Mono";
+    src: url("/fonts/RoobertMonoTRIAL-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Roobert Mono";
+    src: url("/fonts/RoobertMonoTRIAL-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}

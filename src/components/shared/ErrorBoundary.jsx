@@ -1,4 +1,4 @@
-import {useRouteError} from "react-router";
+import {Link, useRouteError} from "react-router";
 
 export default function ErrorBoundary() {
     const error = useRouteError();

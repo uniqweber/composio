@@ -26,7 +26,7 @@ export default defineConfig([
             "prefer-const": "error",
             "no-unreachable": "error",
             "no-duplicate-imports": "error",
-            "no-unused-vars": ["error", {varsIgnorePattern: "^[A-Z_]"}],
+            "no-unused-vars": ["error", {varsIgnorePattern: "^(motion|[A-Z_])"}],
         },
     },
 ]);
