@@ -1,33 +1,27 @@
-import React from "react";
-
-const ctaInfo = ["Custom user accounts", "Dedicated SLA & SOC-2", "Custom API volume", "VPC/on-prem option"];
+import bg from "@/assets/images/pricing-cta-bg.png";
 
 export default function CTA() {
     return (
-        <div className=" max-w-screen-lg mx-auto font-roobert  px-6 lg:px-4 xl:px-0 text-white/70">
-            <div className="bg-[#212121] group duration-500  lg:hover:bg-black p-4 lg:p-6 grid lg:grid-cols-2">
-                <div>
-                    <div className="flex items-start justify-between">
-                        <h4 className="font-tinos w-full tracking-wide text-2xl lg:text-3xl font-light">For <br className="lg:hidden"/> Enterprise</h4>
-                        <p className="text-xs lg:text-sm text-right lg:text-left text-white/40 font-light tracking-wide">Secure, reliable and accurate LLM Integrations at scale.</p>
+        <div className="padding-x text-white mt-10 lg:mt-36">
+            <div className="relative md:rounded-4xl h-96 md:h-67  overflow-hidden">
+                <img src={bg} alt="" className="size-full object-cover" />
+
+                <div className="absolute inset-0 p-6 md:p-12 flex flex-col justify-between">
+                    <div>
+                        <h6 className="text-white/40 font-roobert font-light text-lg tracking-wide">Composio Startup Program</h6>
+                        <h2 className="text-5xl md:text-6xl font-ibm tracking-tighter mt-2 mb-5">
+                            Get up to <span>$25K</span> of <span className="italic">free credits</span>
+                        </h2>
                     </div>
-                    <div className="lg:grid hidden grid-cols-2 font-roobert font-light text-lg mt-10  ">
-                        {ctaInfo.map((item) => (
-                            <div key={item} className="flex items-center gap-2">
-                                <div className="size-1.5 bg-white"></div>
-                                <span>{item}</span>
-                            </div>
-                        ))}
+                    <div className="flex flex-col md:flex-row items-end justify-between gap-2">
+                        <p className="text-sm font-roobert font-light text-white/80 md:text-lg max-w-md">
+                            Eligible startups can get up to $25K in free credits on  Composio.
+                        </p>
+                        <button className="w-full md:w-auto justify-center font-roobert-mono  uppercase flex items-center gap-3  text-black px-16 py-2 bg-white border ">
+                            <span className="font-tinos">&#8594;</span>
+                            <span>Apply Now</span>
+                        </button>
                     </div>
-                </div>
-                <div className="text-right">
-                    <h2 className="font-roobert font-light text-2xl mt-5 lg:mt-0">
-                        Contact for <br /> custom quote
-                    </h2>
-                    <button className="hidden font-roobert-mono  uppercase lg:flex items-center gap-3  text-black px-16 py-2 ml-auto mt-10 bg-gradient-to-b from-white to-white lg:group-hover:from-indigo-300 lg:group-hover:to-orange-300 transition-colors duration-500">
-                        <span className="font-tinos">&#8594;</span>
-                        <span>book a call</span>
-                    </button>
                 </div>
             </div>
         </div>

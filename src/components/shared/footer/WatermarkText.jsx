@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MobileWatermarkText = () => {
+export function MobileWatermarkText() {
     return (
         <div className="absolute top-0 bottom-0 -right-6 h-full w-[30vw] flex items-center md:hidden">
             <div
@@ -16,9 +16,9 @@ export const MobileWatermarkText = () => {
             <div className="absolute top-0 bottom-0 right-0 h-full w-[10vw] bg-gradient-to-l from-black to-transparent"></div>
         </div>
     );
-};
+}
 
-export const DesktopWatermarkText = () => {
+export function DesktopWatermarkText() {
     return (
         <div className="hidden md:block relative  h-[16vw]">
             <div
@@ -31,4 +31,4 @@ export const DesktopWatermarkText = () => {
             <div className="absolute left-0 right-0 bottom-0 h-[15vw] bg-gradient-to-b from-transparent to-black "></div>
         </div>
     );
-};
+}
