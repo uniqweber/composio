@@ -1,0 +1,32 @@
+export const pricingData = [
+    {
+        id: 1,
+        title: "Totally Free",
+        subtitle: "No credit card required",
+        price: "$0",
+        period: "/ month",
+        totalCalls: "20k total calls/mo",
+        support: "Community support",
+        additionalCalls: "NO USAGE BASED",
+    },
+    {
+        id: 2,
+        title: "Ridiculously Cheap",
+        subtitle: "No need to talk to humans",
+        price: "$29",
+        period: "/ month",
+        totalCalls: "200k tool calls/mo",
+        support: "Email support",
+        additionalCalls: "0.299/1K ADDITIONAL CALLS",
+    },
+    {
+        id: 3,
+        title: "Serious Business",
+        subtitle: "Maybe talk to humans?",
+        price: "$229",
+        period: "/ month",
+        totalCalls: "2M tool calls/mo",
+        support: "Slack support (1k+/month)",
+        additionalCalls: "0.249/1K ADDITIONAL CALLS",
+    },
+];
