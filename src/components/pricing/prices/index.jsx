@@ -7,7 +7,7 @@ import PriceCard from "./PriceCard";
 
 export default function Prices() {
     return (
-        <div className="padding-x pb-26">
+        <div className="padding-x pb-4 xl:pb-5">
             <div className="relative pt-4">
                 <img src={bg} alt="" className="min-h-[400px] object-cover lg:object-center -mt-10 lg:mt-0" />
             </div>
