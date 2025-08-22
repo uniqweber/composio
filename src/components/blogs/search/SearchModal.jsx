@@ -2,6 +2,7 @@ import {useEffect, useRef} from "react";
 import {motion} from "framer-motion";
 import {GoSearch} from "react-icons/go";
 import SearchResult from "./SearchResult";
+import {useNavigate} from "react-router";
 
 function slugify(str) {
     return str
@@ -12,6 +13,8 @@ function slugify(str) {
 
 export default function SearchModal({query, setQuery, results, setIsOpen}) {
     const ref = useRef(null);
+    const navigate = useNavigate();
+
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (ref.current && !ref.current.contains(e.target)) {
@@ -64,6 +67,7 @@ export default function SearchModal({query, setQuery, results, setIsOpen}) {
                                     slug={slugify(article.title)}
                                     onClick={() => {
                                         setIsOpen(false);
+                                        navigate(`/blogs/your-slug`);
                                         setQuery("");
                                     }}
                                 />
