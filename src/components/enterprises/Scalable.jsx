@@ -12,7 +12,7 @@ export default function Scalable() {
                         <h2 className="text-4xl lg:pt-5  lg:text-6xl font-tinos text-black/80 ">Scalable agentic solutions</h2>
                         <img src={textBg} alt="" className="absolute inset-0" />
                     </div>
-                    <p className="font-roobert tracking-wide font-light lg:text-lg mt-2 lg:mt-4">
+                    <p className="font-roobert tracking-wide font-light lg:text-2xl mt-2 lg:mt-4">
                         Secure, reliable and accurate LLM <br /> integrations at scale.
                     </p>
                     <button className="px-24 font-roobert-mono font-light uppercase mt-6 w-full lg:mt-8 md:w-auto py-2 bg-black text-white text-sm">Book a call</button>

@@ -9,7 +9,7 @@ export default function Automate() {
 
             <div className="absolute inset-0 flex flex-col md:items-center justify-center md:text-center px-6 max-w-xl mx-auto">
                 <h2 className="font-tinos text-4xl md:text-6xl text-gray-800">Automate at scale</h2>
-                <p className="font-roobert tracking-wide font-light lg:text-lg mt-2 lg:mt-4 max-w-sm">
+                <p className="font-roobert tracking-wide font-light lg:text-xl mt-2 lg:mt-4 max-w-md">
                     Automate lead sourcing, enrichment, and outreach with ready-to-use sales workflows.
                 </p>
                 <button className="px-24 font-roobert-mono w-full font-light uppercase mt-6 lg:mt-8  py-2 bg-black text-white text-sm">

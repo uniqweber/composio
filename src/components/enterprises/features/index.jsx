@@ -18,8 +18,9 @@ export default function Features() {
                     <h2 className="text-4xl md:text-5xl font-tinos text-black/80">
                         <span className="italic">Enterprise-exclusive</span> features
                     </h2>
-                    <p className="font-roobert text-black/40 tracking-wide font-light lg:text-lg mt-2 lg:mt-4">
-                        All the essentials your agent needs, <br /> ready to go from day one.
+                    <p className="font-roobert max-w-md text-black/40 tracking-wide font-light lg:text-xl mt-2 lg:mt-4 md:pr-5">
+                        From enrichment to engagement, let your agents handle prospecting, outreach, follow-ups, and
+                        pipeline updates.
                     </p>
                 </div>
                 <img src={textBg} alt="" className="h-full object-cover opacity-20 absolute inset-0" />

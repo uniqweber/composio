@@ -13,7 +13,7 @@ export default function Security() {
                     <h2 className="text-4xl md:text-5xl  font-tinos text-black/80 ">
                         <span className="italic">Enterprise-level</span> security
                     </h2>
-                    <p className="font-roobert text-black/40 tracking-wide font-light lg:text-lg mt-2 lg:mt-4">
+                    <p className="font-roobert text-black/40 tracking-wide font-light lg:text-xl mt-2 lg:mt-4">
                         All the essentials your agent needs, <br /> ready to go from day one.
                     </p>
                 </div>
