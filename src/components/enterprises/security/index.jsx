@@ -1,6 +1,5 @@
 import React from "react";
 import textBg from "@/assets/images/enterprises-info-text-bg.png";
-import SecurityCard from "./SecurityCard";
 import SOC from "./SOC";
 import RBAC from "./RBAC";
 import IPAllowList from "./IPAllowList";

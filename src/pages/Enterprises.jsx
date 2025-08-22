@@ -1,4 +1,5 @@
 import Automate from "@/components/enterprises/Automate";
+import Features from "@/components/enterprises/features";
 import LogoCloud from "@/components/enterprises/LogoCloud";
 import Scalable from "@/components/enterprises/Scalable";
 import Security from "@/components/enterprises/security";
@@ -10,6 +11,7 @@ export default function Enterprises() {
             <Scalable />
             <LogoCloud />
             <Security />
+            <Features />
             <Automate />
         </>
     );
