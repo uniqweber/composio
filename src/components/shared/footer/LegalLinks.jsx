@@ -1,6 +1,6 @@
 import {legalLinks} from "@/constants/navigation";
 import React from "react";
-import { Link } from "react-router";
+import {Link} from "react-router";
 
 export default function LegalLinks() {
     return (

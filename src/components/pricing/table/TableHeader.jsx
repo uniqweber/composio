@@ -9,7 +9,12 @@ export default function TableHeader() {
                     <div className="font-semibold text-black font-roobert">Features</div>
                 </th>
                 {pricingPlans.map((plan, index) => (
-                    <th key={index} className={`text-center p-3 border-l  border-black/20 min-w-48 ${index === 1 ? "bg-white" : ""}`}>
+                    <th
+                        key={index}
+                        className={`text-center p-3 border-l  border-black/20 min-w-48 ${
+                            index === 1 ? "bg-white" : ""
+                        }`}
+                    >
                         <div>
                             <div className=" text-black/70 font-roobert ">{plan.name}</div>
                             <div className="text-sm text-black/40 font-roobert font-light">

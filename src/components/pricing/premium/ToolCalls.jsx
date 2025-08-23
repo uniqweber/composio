@@ -8,8 +8,8 @@ export default function ToolCalls() {
                     <h3 className="font-roobert text-lg text-gray-900"> † Premium Tool Calls</h3>
                 </div>
                 <div className="flex-1 font-roobert font-light">
-                    <p className="text-sm text-gray-600 mb-1 ">Premium Tool Calls include:</p>
-                    <ul className="text-sm text-gray-600 space-y-1 mb-4">
+                    <p className=" text-gray-600 mb-1 ">Premium Tool Calls include:</p>
+                    <ul className=" text-gray-600 space-y-1 mb-4">
                         <li>- Search APIs (Google, Bing, Perplexity, etc.)</li>
                         <li>- Code execution environments (e2b)</li>
                         <li>- Web scraping & data extraction (Firecrawl)</li>

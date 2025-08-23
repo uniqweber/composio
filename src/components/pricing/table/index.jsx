@@ -7,7 +7,7 @@ import {featuresData} from "@/constants/pricingDataTable";
 
 export default function PricingTable() {
     return (
-        <div className="max-w-screen-xl hidden lg:block w-full mx-auto padding-x bg-light mt-24">
+        <div className="max-w-screen-2xl hidden lg:block w-full mx-auto padding-x bg-light mt-24">
             <div className="overflow-x-auto">
                 <table className="w-full ">
                     <TableHeader />

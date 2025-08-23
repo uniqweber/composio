@@ -5,7 +5,7 @@
 @import "tailwindcss";
 @theme {
     /* Colors */
-    --color-light: #f6f4f0;
+    --color-light: #F7F4F0;
 
     /* Typography */
     --font-tinos: "Tinos", serif;

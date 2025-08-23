@@ -2,7 +2,7 @@ import bg from "@/assets/images/pricing-cta-bg.png";
 
 export default function CTA() {
     return (
-        <div className="padding-x text-white mt-10 lg:mt-36">
+        <div className="padding-x max-w-screen-2xl mx-auto text-white mt-10 lg:mt-36">
             <div className="relative md:rounded-4xl h-96 md:h-67  overflow-hidden">
                 <img src={bg} alt="" className="size-full object-cover" />
 
