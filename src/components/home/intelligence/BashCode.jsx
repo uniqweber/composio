@@ -5,7 +5,7 @@ export default function BashCode({handleCopy, copied}) {
     return (
         <div
             onClick={handleCopy}
-            className="bg-white hidden sm:block hover:bg-black hover:text-white duration-500 border hover:border-black py-3 text-xl w-max px-8 mt-10 font-roobert-mono relative cursor-pointer"
+            className="bg-white hidden sm:block hover:bg-black hover:text-white duration-500 border hover:border-black py-2 2xl:py-3 text-lg 2xl:text-xl w-max px-8 mt-10 font-roobert-mono relative cursor-pointer"
         >
             <div className="flex items-center gap-3">
                 <span>curl -fsSL https://composio.dev/install | bash</span>
