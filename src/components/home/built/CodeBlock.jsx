@@ -2,39 +2,13 @@ import {useState, useEffect, useRef} from "react";
 import {useInView, motion} from "framer-motion";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import {atomOneLight} from "react-syntax-highlighter/dist/esm/styles/hljs";
-
-// preserve exact format
-const codeLines = [
-    "",
-    "const connectionRequest = await",
-    'composio.toolkits.authorize(userId, "github");',
-    "",
-    "const redirectUrl =",
-    "connectionRequest.redirectUrl;",
-    "",
-    "const connectedAccount = await",
-    "connectionRequest.waitForConnection();",
-    "",
-    "const tools = await composio.tools.get(userId, {",
-    '  toolkits: ["github"],',
-    "});",
-    "",
-    "const response = await openai.chat.completions.create(",
-    "{",
-    '  model: "gpt-4o-mini",',
-    '  messages: [{ role: "user", content: "Star the',
-    '    composio repository on GitHub" }],',
-    "  tools: tools,",
-    '  tool_choice: "auto",',
-    "});",
-];
+import {codeLines} from "@/constants/apiCodes";
 
 export default function CodeBlock() {
     const [visibleCode, setVisibleCode] = useState([]);
     const ref = useRef(null);
-    const isInView = useInView(ref, {once: true, amount: 0.3});
-
     const hasAnimated = useRef(false);
+    const isInView = useInView(ref, {once: true, amount: 0.3});
 
     useEffect(() => {
         if (isInView && !hasAnimated.current) {
@@ -63,16 +37,8 @@ export default function CodeBlock() {
                 language="javascript"
                 style={atomOneLight}
                 showLineNumbers
-                customStyle={{
-                    background: "transparent",
-                    padding: "1.25rem",
-                    // lineHeight: "1.6",
-                    whiteSpace: "pre-wrap",
-                }}
-                lineNumberStyle={{
-                    color: "gray",
-                    opacity: 0.6,
-                }}
+                customStyle={{background: "transparent", padding: "1.25rem", whiteSpace: "pre-wrap"}}
+                lineNumberStyle={{color: "gray", opacity: 0.6}}
             >
                 {visibleCode.join("\n").replace(/\n$/, "")}
             </SyntaxHighlighter>
