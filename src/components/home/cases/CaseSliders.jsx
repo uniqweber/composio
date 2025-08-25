@@ -18,7 +18,7 @@ export function TestimonialCard({caseStudy}) {
                 <h3 className="text-black/40 font-roobert font-light mb-5">{caseStudy.name}</h3>
 
                 <div className="mb-10">
-                    <p className="text-3xl xl:text-4xl font-ibm font-light text-black/60 leading-11 xl:leading-12">{caseStudy.title}</p>
+                    <p className="text-2xl md:text-3xl xl:text-4xl font-ibm font-light text-black/60 md:leading-11 xl:leading-12">{caseStudy.title}</p>
                 </div>
 
                 <div className="flex items-center font-roobert gap-4 mb-10">
@@ -31,7 +31,7 @@ export function TestimonialCard({caseStudy}) {
 
                 <div className="grid grid-cols-2 gap-5 font-roobert">
                     {caseStudy.highlights.map((highlight) => (
-                        <div className="">
+                        <div className="text-center md:text-left">
                             <div className="text-2xl xl:text-4xl font-bold text-black mb-2">
                                 {highlight.infoTitle}{" "}
                                 {highlight.unit && (

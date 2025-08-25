@@ -4,12 +4,14 @@ import BuiltForAgents from "@/components/home/built";
 import CaseStudies from "@/components/home/cases";
 import PriceCompare from "@/components/home/compare";
 import Intelligence from "@/components/home/intelligence";
+import MuscleMemory from "@/components/home/memory";
 import Tweets from "@/components/home/tweets";
 
 export default function Home() {
     return (
         <>
             <AgentsLogoCloud />
+            <MuscleMemory/>
             <CaseStudies />
             <BuiltForAgents />
             <Tweets />
