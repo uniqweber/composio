@@ -102,3 +102,30 @@ button {
 .pixel-fade {
     animation: pixelReveal 0.8s ease-in-out;
 }
+
+
+.swiper-slide {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 0.3;
+  transform: scale(0.95);
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.custom-bullet {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.228);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-bullet-active {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  cursor: pointer;
+}
