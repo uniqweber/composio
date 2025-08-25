@@ -15,8 +15,8 @@ export default function MuscleMemory() {
         const handleScroll = () => {
             if (sectionRef.current) {
                 const rect = sectionRef.current.getBoundingClientRect();
-                const sectionMiddle = rect.top + rect.height / 2;
-                const screenMiddle = window.innerHeight / 2;
+                const sectionMiddle = rect.top + rect.height / 1;
+                const screenMiddle = window.innerHeight / 1;
 
                 setInView(sectionMiddle < screenMiddle);
             }

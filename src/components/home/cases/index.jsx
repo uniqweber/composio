@@ -42,8 +42,8 @@ export default function CaseStudies() {
                 onSwiper={setSwiperInstance}
                 className="testimonial-swiper"
             >
-                {caseStudies.map((caseStudy) => (
-                    <SwiperSlide key={caseStudy.id}>
+                {caseStudies.map((caseStudy, index) => (
+                    <SwiperSlide key={index}>
                         <TestimonialCard caseStudy={caseStudy} />
                     </SwiperSlide>
                 ))}

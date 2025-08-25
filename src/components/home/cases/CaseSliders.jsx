@@ -30,8 +30,8 @@ export function TestimonialCard({caseStudy}) {
                 </div>
 
                 <div className="grid grid-cols-2 gap-5 font-roobert">
-                    {caseStudy.highlights.map((highlight) => (
-                        <div className="text-center md:text-left">
+                    {caseStudy.highlights.map((highlight, index) => (
+                        <div key={index} className="text-center md:text-left">
                             <div className="text-2xl xl:text-4xl font-bold text-black mb-2">
                                 {highlight.infoTitle}{" "}
                                 {highlight.unit && (
