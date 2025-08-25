@@ -1,3 +1,4 @@
+import AgentsLogoCloud from "@/components/home/agents";
 import Benefits from "@/components/home/benefits";
 import BuiltForAgents from "@/components/home/built";
 import CaseStudies from "@/components/home/cases";
@@ -8,6 +9,7 @@ import Tweets from "@/components/home/tweets";
 export default function Home() {
     return (
         <>
+            <AgentsLogoCloud />
             <CaseStudies />
             <BuiltForAgents />
             <Tweets />
